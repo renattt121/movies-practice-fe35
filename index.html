@@ -19,75 +19,44 @@
       <div class="container header-container">
         <div class="search">
           <form class="search-form">
-            <label>
-              <input
-                id="search-movie"
-                type="search"
-                placeholder="Search"
-                data-search
-              />
-            </label>
+            <input
+              id="search-movie"
+              type="search"
+              placeholder=" "
+              data-search
+            />
+            <label for="search-movie">Введіть назву фільму</label>
           </form>
         </div>
+        <!-- второй баттон -->
         <div class="ganre" data-filter>
-          <h2 class="header-title">Genre</h2>
-          <ul class="ganre-list">
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="drama">Драма</button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="crime">Кримінал</button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="mystery">Містика</button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="biography">
-                Біографічні
-              </button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="western">Вестерн</button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="comedy">Комедія</button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="family">Сімейні</button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="animation">
-                Анімаційні
-              </button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="romance">
-                Романтичні
-              </button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="music">Мюзикли</button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="adventure">
-                Пригоди
-              </button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="thriller">
-                Триллер
-              </button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="sci-fi">Сай-фай</button>
-            </li>
-            <li class="ganre-item">
-              <button class="ganre-button" data-ganre="action">Екшн</button>
-            </li>
-          </ul>
+          <h2 class="header-title"></h2>
+          <select class="ganre-list">
+            <option class="ganre-item" value="">Оберіть жанр</option>
+            <option class="ganre-item" data-ganre="drama">Драма</option>
+            <option class="ganre-item" data-ganre="crime">Кримінал</option>
+            <option class="ganre-item" data-ganre="mystery">Містика</option>
+            <option class="ganre-item" data-ganre="biography">
+              Біографічні
+            </option>
+            <option class="ganre-item" data-ganre="western">Вестерн</option>
+            <option class="ganre-item" data-ganre="comedy">Комедія</option>
+            <option class="ganre-item" data-ganre="family">Сімейні</option>
+            <option class="ganre-item" data-ganre="animation">
+              Анімаційні
+            </option>
+            <option class="ganre-item" data-ganre="romance">Романтичні</option>
+            <option class="ganre-item" data-ganre="music">Мюзикли</option>
+            <option class="ganre-item" data-ganre="adventure">Пригоди</option>
+            <option class="ganre-item" data-ganre="thriller">Триллер</option>
+            <option class="ganre-item" data-ganre="sci-fi">Сай-фай</option>
+            <option class="ganre-item" data-ganre="action">Екшн</option>
+          </select>
         </div>
+        <!--  баттон  -->
         <div class="sort">
           <select name="sort" id="sort" data-sort>
+            <button><selectedcontent> </selectedcontent></button>
             <option disabled selected>Sort by</option>
             <option value="year">Рік</option>
             <option value="rating">Оцінка</option>

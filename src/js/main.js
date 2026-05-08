@@ -18,12 +18,12 @@ inputSearchFilm.addEventListener("input", handleSearchFilm);
 //фільтрація за жанром
 const buttonFilterByGenre = document.querySelector("[data-filter]");
 const handleFilter = (event) => {
-  const currentUserGanre = event.target.dataset.ganre;
+  const currentUserGanre = event.target.selectedOptions[0].dataset.ganre; //тому що чендж только с масив працює
 
   const filteredFilms = filterByGenre(currentUserGanre, movies);
   renderMovies(filteredFilms, moviesContainer);
 };
-buttonFilterByGenre.addEventListener("click", handleFilter);
+buttonFilterByGenre.addEventListener("change", handleFilter);
 // сортування
 const sortSelect = document.querySelector("[data-sort]");
 const handleSort = (event) => {
